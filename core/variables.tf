@@ -15,7 +15,7 @@ variable "region" {
 }
 
 ## core ##
-variable "cidr" {
+variable "vpc_cidr" {
   default = "192.168.10.0/24"
   description = "Subnet to be used within VPC and AZ"
 }

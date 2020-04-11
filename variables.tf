@@ -4,13 +4,13 @@ variable "region" {
   description = "Region to deploy all instances"  
 }
 
-variable "aws_access_key" {
+/*variable "aws_access_key" {
   description = "AWS access key for IAM user"
 }
 
 variable "aws_secret_key" {
   description = "AWS secret key for IAM user"
-}
+}*/
 
 ## Deployment Information ##
 variable "project_name" {
@@ -27,7 +27,7 @@ variable "managed_by" {
 #############
 
 ## core ##
-variable "cidr" {
+variable "vpc_cidr" {
   default = "192.168.100.0/24"
   description = "Subnet to be used within VPC and AZ"
 }

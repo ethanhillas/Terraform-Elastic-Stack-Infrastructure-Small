@@ -8,8 +8,8 @@ terraform {
 provider "aws" {
   version = ">=2.57"
   region = var.region
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
+  #shared_credentials_file = "$HOME/.aws/credentials"
+  #profile = "default"
 }
 
 module "core" {
@@ -21,7 +21,7 @@ module "core" {
   region = var.region
 
   # core
-  cidr = var.cidr
+  vpc_cidr = var.vpc_cidr
   trusted_network = var.trusted_network
   availability_zones = var.availability_zones
   public_key_file = var.public_key_file

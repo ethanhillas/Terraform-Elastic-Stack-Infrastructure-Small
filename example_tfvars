@@ -1,0 +1,48 @@
+### Deployment Name ###
+## Mandatory
+project_name = ""
+
+
+### Provider ###
+## Optional
+#region = ""
+
+### core ###
+## Mandatory
+public_key_file = ""
+trusted_network = ""
+## Optional
+#availability_zones = ""
+#cidr = ""
+
+
+### es_cluster ###
+## Mandatory
+es_instance_type = ""
+## Optional
+#es_ami_owner = ""
+#es_ami_name = ""
+
+
+
+### logstash ###
+## Mandatory
+logstash_instance_type = ""
+## Optional
+#logstash_ami_owner = ""
+#logstash_ami_name = ""
+
+
+
+### kibana ###
+## Mandatory
+kibana_instance_type = ""
+## Optional
+#kibana_ami_owner = ""
+#kibana_ami_name = ""
+
+
+
+
+
+
