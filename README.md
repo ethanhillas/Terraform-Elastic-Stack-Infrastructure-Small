@@ -13,8 +13,8 @@
  1. Run `terraform init` in the root directory of the repository. This will initialise terraform and download the AWS provider module.
  2. Initialise input variables. You can do this either of two ways:
    * Specify each required variable at the command line as prompted when you run `terraform plan` or `terraform apply`.
-   * Create a tfvars file following the schema provided in the example.tfvars file found in the repository. 
- 3. Run `terraform apply`, check the deployment plan to ensure you have the correct setup and follow the prompt from terraform.
+   * Create a tfvars file following the schema provided in the example_tfvars file found in the repository. 
+ 3. Run `terraform apply`, check the deployment plan to ensure you have the correct setup and follow the prompts.
 
  That's it!!
 
