@@ -35,7 +35,7 @@ variable "es_cluster_comms_sg_id" {
   description = "sg for internal es cluster communications"
 }
 
-variable "outbound_internet_id" {
+variable "outbound_internet_sg_id" {
   description = "sg for outbound internet traffic"
 }
 

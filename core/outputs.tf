@@ -15,7 +15,7 @@ output "es_cluster_comms_sg_id" {
   value = aws_security_group.es_cluster_comms.id
 }
 
-output "outbound_internet_id" {
+output "outbound_internet_sg_id" {
   value = aws_security_group.internet_outbound.id
 }
 

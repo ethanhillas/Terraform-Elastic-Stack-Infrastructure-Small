@@ -30,7 +30,7 @@ resource "aws_instance" "logstash_server" {
   vpc_security_group_ids = [
     var.trusted_network_inbound_sg_id,
     var.es_cluster_comms_sg_id,
-    var.outbound_internet_id
+    var.outbound_internet_sg_id
   ]
 
   tags = {

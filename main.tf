@@ -38,7 +38,7 @@ module "es_cluster" {
   subnet_ids = module.core.subnet_ids
   trusted_network_inbound_sg_id = module.core.trusted_network_inbound_sg_id
   es_cluster_comms_sg_id = module.core.es_cluster_comms_sg_id
-  outbound_internet_id = module.core.outbound_internet_id
+  outbound_internet_sg_id = module.core.outbound_internet_sg_id
   public_key_name = module.core.public_key_name
   
   # es_cluster
@@ -59,7 +59,7 @@ module "kibana" {
   subnet_ids = module.core.subnet_ids
   trusted_network_inbound_sg_id = module.core.trusted_network_inbound_sg_id
   es_cluster_comms_sg_id = module.core.es_cluster_comms_sg_id
-  outbound_internet_id = module.core.outbound_internet_id
+  outbound_internet_sg_id = module.core.outbound_internet_sg_id
   public_key_name = module.core.public_key_name
 
   # kibana
@@ -80,7 +80,7 @@ module "logstash" {
   subnet_ids = module.core.subnet_ids
   trusted_network_inbound_sg_id = module.core.trusted_network_inbound_sg_id
   es_cluster_comms_sg_id = module.core.es_cluster_comms_sg_id
-  outbound_internet_id = module.core.outbound_internet_id
+  outbound_internet_sg_id = module.core.outbound_internet_sg_id
   public_key_name = module.core.public_key_name
 
   # Logstash

@@ -4,14 +4,6 @@ variable "region" {
   description = "Region to deploy all instances"  
 }
 
-/*variable "aws_access_key" {
-  description = "AWS access key for IAM user"
-}
-
-variable "aws_secret_key" {
-  description = "AWS secret key for IAM user"
-}*/
-
 ## Deployment Information ##
 variable "project_name" {
   description = "A project name tagged to all cloud instances"
